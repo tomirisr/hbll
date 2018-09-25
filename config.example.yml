@@ -1,0 +1,63 @@
+# This file should be used as documentation/validation for your projects 
+# config.yml file. All uncommented variables are used to make sure that 
+# your config.yml file has at least those attributes defined.
+
+meta:
+  python_version: 3.6
+  django_project_template_version: 5.0.1
+  project_name: "room_reservation"
+  project_slug: "room_reservation"
+  developers:
+    -  "Tomiris Mollinet"
+  designers: []
+
+general:
+  debug: true
+  port: 8888
+  admins:
+    - ["Tomiris Mollinet", "tomiris.rad@gmail.com"]
+  apps_site: false
+  # allowed_hosts: ["localhost"]
+  # force_script_name: "/room_reservation"
+
+caches:
+  default:
+    backend: 'django.core.cache.backends.filebased.FileBasedCache'
+    location: '.django-cache'
+
+security:
+  secret_key: "asdf"
+  # secure_cookies: true
+  # ssl_redirect: true
+
+cas:
+  enabled: true
+  # server: "https://cas.byu.edu/cas/"
+  server: "https://cas-stg.byu.edu/cas/"
+
+prysm:
+  enabled: false
+  # host: "https://search.lib.byu.edu/prysm"
+  host: "https://probe.lib.byu.edu:8443/prysm"
+  log: "room_reservation"
+
+# static:
+#   root: /path/to/project/static
+#   url: /static/
+
+# media:
+#   root: /path/to/project/media
+#   url: /media/
+
+database:
+  default:
+    engine: "django.db.backends.sqlite3"
+    name: "default.db"
+    # engine: "django.db.backends.mysql"
+    # name: "room_reservation"
+    # user: "room_reservation_user"
+    # password:
+    # host: "localhost"
+    # port:
+    # options:
+    #     init_command: "Set sql_mode='STRICT_TRANS_TABLES'"

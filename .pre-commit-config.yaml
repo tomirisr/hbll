@@ -1,0 +1,11 @@
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  sha: v0.7.1
+  hooks:
+    - id: double-quote-string-fixer
+
+- repo: git@bitbucket.org:byuhbll/python-pre-commit-hooks
+  sha: 0.1.5
+  hooks:
+    - id: isort-hbll
+    - id: yapf-hbll
+    - id: flake8-hbll

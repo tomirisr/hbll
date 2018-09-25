@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "lib": [
+            "dom",
+            "es6",
+            "dom.iterable",
+            "scripthost",
+            "esnext.asynciterable"
+        ],
+        "module": "esNext",
+        "allowJs": true,
+        "checkJs": false,
+        "jsx": "react",
+        "sourceMap": true,
+        "outDir": "./core/static/js/",
+        "rootDir": "./assets/js/",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "./assets/js/**/*"
+    ]
+}
